@@ -1,0 +1,49 @@
+.container {
+    margin-top: 30px;
+    padding: 0 20px;
+    border-radius: 25px;
+    align-items: center;  
+    margin-bottom: 25px;
+    background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+  }
+
+body {
+    font-family: sans-serif;    
+    display: block;
+    color: #adccef;
+    
+}
+
+input[type=text] {
+   margin: 20px 5px;  
+   color: #253b4c;
+      }
+
+input[type=Submit] {
+    background-color: #ffffff;
+    color: #253b4c;
+}
+
+button {
+    background-color: #ffffff;
+    color: #253b4c;
+}
+
+
+.card-img-top{
+    max-width:50px;
+    color:#a6c9fd;
+}
+h1 {
+    text-align: left;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 48px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0 20px;
+    display: block;
+  }
+  p{
+      display: block;
+  }
+ 
