@@ -61,7 +61,11 @@ function displayWeather(response) {
     let weatherHum = document.querySelector("#humidity");
     weatherHum.innerHTML = response.data.name;
     let humidity = Math.round(response.data.main.humidity);
-    weatherHum.innerHTML = `${humidity}`;           
+    weatherHum.innerHTML = `${humidity}`;     
+    let weatherHigh = document.querySelector("#high");
+    weatherHigh.innerHTML = response.data.name;
+    let high = Math.round(response.data.main.temp_max);
+    weatherHigh.innerHTML = `${high}`;                 
   }
 
   function showCurrentLocation(position) {
