@@ -68,8 +68,7 @@ function displayWeather(response) {
     conditions.innerHTML = response.data.weather[0].description;
     humidity.innerHTML = response.data.main.humidity;
     wind.innerHTML = Math.round(response.data.wind.speed);
-   
-               
+                   
   }
 
   function showCurrentLocation(position) {
