@@ -64,7 +64,7 @@ function displayWeather(response) {
     let weatherHum = document.querySelector("#humidity");
     weatherHum.innerHTML = response.data.name;
     let humidity = Math.round(response.data.main.humidity);
-    weatherHum.innerHTML = `${humidity}%`;         
+    weatherHum.innerHTML = `${humidity}`;         
   }
   
   function showCurrentLocation(position) {
