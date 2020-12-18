@@ -59,6 +59,13 @@ function displayWeather(response) {
     let temperature = Math.round(response.data.main.temp);
     weatherDiv.innerHTML = `${temperature}`;         
   }
+
+  function displayHumidity(response) {
+    let weatherHum = document.querySelector("#humidity");
+    weatherHum.innerHTML = response.data.name;
+    let humidity = Math.round(response.data.main.humidity);
+    weatherHum.innerHTML = `${humidity%}`;         
+  }
   
   function showCurrentLocation(position) {
     let latitude = position.coords.latitude;
