@@ -62,6 +62,7 @@ function displayWeather(response) {
      let humidity = document.querySelector("#humidity");
      let wind = document.querySelector("#wind");
      let high = document.querySelector("#high");
+     let low = document.querySelector("#low");
 
      fahrenheitTemperature = response.data.main.temp
 
@@ -70,7 +71,8 @@ function displayWeather(response) {
     conditions.innerHTML = response.data.weather[0].description;
     humidity.innerHTML = response.data.main.humidity;
     wind.innerHTML = Math.round(response.data.wind.speed);
-    high.innerHTML = Math.round(response.data.main.temp_max)
+    high.innerHTML = Math.round(response.data.main.temp_max);
+    low.innerHTML = Math.round(response.data.main.temp_min);
                    
   }
 
