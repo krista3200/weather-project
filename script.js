@@ -76,23 +76,23 @@ function displayWeather(response) {
   let currentLoc = document.querySelector("#current-location");
   currentLoc.addEventListener("click", showPostion);
 
-//function convertToFahrenheit(event){
-//event.preventDefault();
-//let temperatureElement = document.querySelector("#temperature");
-//temperatureElement.innerHTML = 30;
-//}
+function convertToFahrenheit(event){
+event.preventDefault();
+let temperatureElement = document.querySelector("#temperature");
+temperatureElement.innerHTML = 30;
+}
 
-//let fahrenheitLink = document.querySelector("#fahrenheit-link");
-//fahrenheitLink.addEventListener("click", convertToFahrenheit);
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", convertToFahrenheit);
 
-//function convertToCelsius(event){
-  //event.preventDefault();
-  //let temperatureElement = document.querySelector("#temperature");
-   //temperatureElement.innerHTML = -1; 
-  //}
+function convertToCelsius(event){
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+   temperatureElement.innerHTML = -1; 
+  }
 
-//let celsiusLink = document.querySelector("#celsius-link");
-//celsiusLink.addEventListener("click", convertToCelsius);
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", convertToCelsius);
 
 
 
