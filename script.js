@@ -54,22 +54,17 @@ function searchCity(city) {
 }
 
 function displayWeather(response) {
-    let weatherDiv = document.querySelector("#temperature");
-    weatherDiv.innerHTML = response.data.name;
-    let temperature = Math.round(response.data.main.temp);
-    weatherDiv.innerHTML = `${temperature}`;
-    let weatherHum = document.querySelector("#humidity");
-    weatherHum.innerHTML = response.data.name;
-    let humidity = Math.round(response.data.main.humidity);
-    weatherHum.innerHTML = `${humidity}`;     
-    let weatherHigh = document.querySelector("#high");
-    weatherHigh.innerHTML = response.data.name;
-    let high = Math.round(response.data.main.temp_max);
-    weatherHigh.innerHTML = `${high}`;       
-    let weatherLow = document.querySelector("#low");
-    weatherHigh.innerHTML = response.data.name;
-    let low = Math.round(response.data.main.temp_min);
-    weatherLow.innerHTML = `${low}`;           
+     let temperature = document.querySelector("#temperature");
+     let humidity = document.querySelector("#humidity")
+     let wind = document.querySelector("#wind")
+
+     fahrenheitTemperature = response.data.main.temp
+
+    temperature.innerHTML = Math.round(fahrenheitTemperature);
+    humidity.innerHTML = response.data.main.humidity;
+    wind.innerHTML = Math.round(response.data.wind.speed)
+   
+               
   }
 
   function showCurrentLocation(position) {
@@ -107,7 +102,7 @@ function convertToCelsius(event){
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", convertToCelsius);
 
-
+search("Kansas City");
 
 
 
