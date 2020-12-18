@@ -55,8 +55,9 @@ function searchCity(city) {
 }
 
 function displayWeather(response) {
+  console.log(response.data)
      let temperature = document.querySelector("#temperature");
-     let city = document.querySelectory("#city");
+     let city = document.querySelector("#city");
      let conditions = document.querySelector("#conditions");
      let humidity = document.querySelector("#humidity");
      let wind = document.querySelector("#wind");
