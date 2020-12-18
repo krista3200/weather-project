@@ -1,40 +1,55 @@
-let now = new Date()
-let date = now.getDate(); //returns todays date
-let hours = now.getHours();
-let minutes = now.getMinutes();
 
-let days = [
-  "Sunday", 
-  "Monday", 
-  "Tuesday", 
-  "Wednesday", 
-  "Thursday", 
-  "Friday", 
-  "Saturday"
-];
-let day = days[now.getDay()];
+function formateDate(timestamp) {
+  let date = new Date(timestamp);
+  let hours = date.getHours();
+  if (hours <10) {
+    hours=`0${hours}`;
+  }
+  let minutes = date.getMinutes();
+  if (minutes < 10) {
+    minutes =`0${minutes}`;
+  }
 
-let months = [
-  "Jan", 
-  "Feb", 
-  "Mar", 
-  "Apr", 
-  "May", 
-  "June", 
-  "July", 
-  "Aug", 
-  "Sept", 
-  "Oct", 
-  "Nov", 
-  "Dec"
-  ]
-let month = months[now.getMonth()];
-
+ 
+  let days = [
+    "Sunday", 
+    "Monday", 
+    "Tuesday", 
+    "Wednesday", 
+    "Thursday", 
+    "Friday", 
+    "Saturday"
+  ];
+  let day = days[now.getDay()];
   let placeHolder = document.querySelector("#day");
-placeHolder.innerHTML =  `${day}`
+  placeHolder.innerHTML =  `${day}`
 
- let h1 = document.querySelector("#date-time");
-h1.innerHTML =  `${month} ${date}, ${hours}:${minutes}`
+  return `${date}, ${hours}:${minutes}`;
+
+  let months = [
+    "Jan", 
+    "Feb", 
+    "Mar", 
+    "Apr", 
+    "May", 
+    "June", 
+    "July", 
+    "Aug", 
+    "Sept", 
+    "Oct", 
+    "Nov", 
+    "Dec"
+    ]
+  let month = months[now.getMonth()];  
+  let h1 = document.querySelector("#date-time");
+  h1.innerHTML =  `${month};
+  return `${month};
+}
+
+
+
+
+
 
 
 function citySearch(event) {
@@ -63,6 +78,7 @@ function displayWeather(response) {
      let wind = document.querySelector("#wind");
      let high = document.querySelector("#high");
      let low = document.querySelector("#low");
+     let date = document.querySelector("#date-time");
 
      fahrenheitTemperature = response.data.main.temp
 
@@ -73,6 +89,7 @@ function displayWeather(response) {
     wind.innerHTML = Math.round(response.data.wind.speed);
     high.innerHTML = Math.round(response.data.main.temp_max);
     low.innerHTML = Math.round(response.data.main.temp_min);
+    date.innerHTML = formatDate(response.data.dt * 1000);
                    
   }
 
@@ -111,7 +128,6 @@ function convertToCelsius(event){
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", convertToCelsius);
 
-search("Kansas City");
 
 
 
