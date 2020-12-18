@@ -24,6 +24,10 @@ input[type=Submit] {
     color: #253b4c;
 }
 
+div[id=conditions] {
+    text-transform: capitalize;
+}
+
 button {
     background-color: #ffffff;
     color: #253b4c;
