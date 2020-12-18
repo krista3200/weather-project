@@ -57,16 +57,13 @@ function displayWeather(response) {
     let weatherDiv = document.querySelector("#temperature");
     weatherDiv.innerHTML = response.data.name;
     let temperature = Math.round(response.data.main.temp);
-    weatherDiv.innerHTML = `${temperature}`;         
-  }
-
-  function displayHumidity(response) {
+    weatherDiv.innerHTML = `${temperature}`;
     let weatherHum = document.querySelector("#humidity");
     weatherHum.innerHTML = response.data.name;
     let humidity = Math.round(response.data.main.humidity);
-    weatherHum.innerHTML = `${humidity}`;         
+    weatherHum.innerHTML = `${humidity}`;           
   }
-  
+
   function showCurrentLocation(position) {
     let latitude = position.coords.latitude;
     let longitude = position.coords.longitude;
@@ -75,6 +72,7 @@ function displayWeather(response) {
     axios.get(locationUrl).then(displayWeather);
     }
 
+  
   function showPostion(event) {
     event.preventDefault();
     navigator.geolocation.getCurrentPosition(showCurrentLocation);
