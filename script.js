@@ -65,7 +65,11 @@ function displayWeather(response) {
     let weatherHigh = document.querySelector("#high");
     weatherHigh.innerHTML = response.data.name;
     let high = Math.round(response.data.main.temp_max);
-    weatherHigh.innerHTML = `${high}`;                 
+    weatherHigh.innerHTML = `${high}`;       
+    let weatherLow = document.querySelector("#low");
+    weatherHigh.innerHTML = response.data.name;
+    let low = Math.round(response.data.main.temp_min);
+    weatherLow.innerHTML = `${low}`;           
   }
 
   function showCurrentLocation(position) {
