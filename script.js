@@ -36,6 +36,7 @@ placeHolder.innerHTML =  `${day}`
  let h1 = document.querySelector("#date-time");
 h1.innerHTML =  `${month} ${date}, ${hours}:${minutes}`
 
+
 function citySearch(event) {
 event.preventDefault();
 let search = document.querySelector("#search");
@@ -55,14 +56,18 @@ function searchCity(city) {
 
 function displayWeather(response) {
      let temperature = document.querySelector("#temperature");
-     let humidity = document.querySelector("#humidity")
-     let wind = document.querySelector("#wind")
+     let city = document.querySelectory("#city");
+     let conditions = document.querySelector("#conditions");
+     let humidity = document.querySelector("#humidity");
+     let wind = document.querySelector("#wind");
 
      fahrenheitTemperature = response.data.main.temp
 
     temperature.innerHTML = Math.round(fahrenheitTemperature);
+    city.innerHTML = response.data.name;
+    conditions.innerHTML = response.data.weather[0].description;
     humidity.innerHTML = response.data.main.humidity;
-    wind.innerHTML = Math.round(response.data.wind.speed)
+    wind.innerHTML = Math.round(response.data.wind.speed);
    
                
   }
