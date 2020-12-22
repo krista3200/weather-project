@@ -10,7 +10,6 @@ function formateDate(timestamp) {
     minutes =`0${minutes}`;
   }
 
- 
   let days = [
     "Sunday", 
     "Monday", 
@@ -25,32 +24,8 @@ function formateDate(timestamp) {
   placeHolder.innerHTML =  `${day}`
 
   return `${date}, ${hours}:${minutes}`;
-
-  let months = [
-    "Jan", 
-    "Feb", 
-    "Mar", 
-    "Apr", 
-    "May", 
-    "June", 
-    "July", 
-    "Aug", 
-    "Sept", 
-    "Oct", 
-    "Nov", 
-    "Dec"
-    ]
-  let month = months[now.getMonth()];  
-  let h1 = document.querySelector("#date-time");
-  h1.innerHTML =  `${month};
-  return `${month};
 }
-
-
-
-
-
-
+  
 
 function citySearch(event) {
 event.preventDefault();
@@ -79,6 +54,7 @@ function displayWeather(response) {
      let high = document.querySelector("#high");
      let low = document.querySelector("#low");
      let date = document.querySelector("#date-time");
+    
 
      fahrenheitTemperature = response.data.main.temp
 
