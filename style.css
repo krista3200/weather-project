@@ -53,4 +53,8 @@ h1 {
       line-height: 1.5;
       text-align: left;
       }
+.column-1 {
+    float: left;
+    width: 33.33%;
+}
  
