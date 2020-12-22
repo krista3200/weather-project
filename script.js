@@ -28,6 +28,7 @@ function formateDate(timestamp) {
 }
 
 function formatMonths(timestamp) {
+  let date = new Date(timestamp);
   let months = [
     "Jan", 
     "Feb", 
@@ -71,7 +72,8 @@ function displayWeather(response) {
      let conditions = document.querySelector("#conditions");
      let humidity = document.querySelector("#humidity");
      let wind = document.querySelector("#wind");
-         let date = document.querySelector("#date-time");
+     let date = document.querySelector("#day");
+     let date = document.querySelector("#date-time");
     
 
      fahrenheitTemperature = response.data.main.temp
