@@ -89,7 +89,7 @@ function displayWeather(response) {
 function convertToFahrenheit(event){
 event.preventDefault();
 let temperatureElement = document.querySelector("#temperature");
-temperatureElement.innerHTML = 30;
+;
 }
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
@@ -98,7 +98,7 @@ fahrenheitLink.addEventListener("click", convertToFahrenheit);
 function convertToCelsius(event){
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
-   temperatureElement.innerHTML = -1; 
+  
   }
 
 let celsiusLink = document.querySelector("#celsius-link");
