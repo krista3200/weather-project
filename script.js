@@ -21,7 +21,7 @@ function formateDate(timestamp) {
   ];
 
   let day = days[now.getDay()];
-  let placeHolder = document.querySelector("#day");
+  let placeHolder = document.querySelector("#day-time");
   placeHolder.innerHTML =  `${day}`
 
   return `${date}, ${hours}:${minutes}`;
