@@ -47,16 +47,7 @@ h1 {
     padding: 0 20px;
     display: block;
   }
-  h2{
-      display: block;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 900;
-      font-size: 36px;
-      line-height: 48px;
-      padding: 0 20px;
-  }
-  
-  Small{
+   Small{
       font-size: 1rem;
       font-weight: 400px;
       line-height: 1.5;
