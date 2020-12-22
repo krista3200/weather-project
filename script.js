@@ -53,7 +53,7 @@ function displayWeather(response) {
      let wind = document.querySelector("#wind");
      let high = document.querySelector("#high");
      let low = document.querySelector("#low");
-     let date = document.querySelector("#date-time");
+     let date = document.querySelector("#day");
     
 
      fahrenheitTemperature = response.data.main.temp
