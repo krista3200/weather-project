@@ -24,8 +24,28 @@ function formateDate(timestamp) {
   placeHolder.innerHTML =  `${day}`
 
   return `${date}, ${hours}:${minutes}`;
+
 }
-  
+
+function formatMonths(timestamp) {
+  let months = [
+    "Jan", 
+    "Feb", 
+    "Mar", 
+    "Apr", 
+    "May", 
+    "June", 
+    "July", 
+    "Aug", 
+    "Sept", 
+    "Oct", 
+    "Nov", 
+    "Dec"
+    ];
+  let month = months[now.getMonth()];  
+  let h1 = document.querySelector("#date-time");
+  h1.innerHTML =  `${month}`;
+  }
 
 function citySearch(event) {
 event.preventDefault();
