@@ -1,5 +1,5 @@
 
-function formateDate(timestamp) {
+function formatDate(timestamp) {
   let date = new Date(timestamp);
   let hours = date.getHours();
   if (hours <10) {
@@ -19,7 +19,7 @@ function formateDate(timestamp) {
     "Saturday"
   ];
 
-  let day = days[now.getDay()];
+  let day = days[date.getDay()];
   return `${day} ${hours}:${minutes}`
  
  }
@@ -43,22 +43,22 @@ function searchCity(city) {
 }
 
 function displayWeather(response) {
-     let temperature = document.querySelector("#temperature");
-     let city = document.querySelector("#city");
-     let conditions = document.querySelector("#conditions");
-     let humidity = document.querySelector("#humidity");
-     let wind = document.querySelector("#wind");
-     let date = document.querySelector("#date");  
+     let temperatureElement = document.querySelector("#temperature");
+     let cityElement = document.querySelector("#city");
+     let conditionsElement = document.querySelector("#conditions");
+     let humidityElement = document.querySelector("#humidity");
+     let windElement = document.querySelector("#wind");
+     let dateElement = document.querySelector("#date");  
        
 
      fahrenheitTemperature = response.data.main.temp
 
-    temperature.innerHTML = Math.round(fahrenheitTemperature);
-    city.innerHTML = response.data.name;
-    conditions.innerHTML = response.data.weather[0].description;
-    humidity.innerHTML = response.data.main.humidity;
-    wind.innerHTML = Math.round(response.data.wind.speed);
-    date.innerHTML=formateDate(response.data.dt * 1000);
+    temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+    cityElement.innerHTML = response.data.name;
+    conditionsElement.innerHTML = response.data.weather[0].description;
+    humidityElement.innerHTML = response.data.main.humidity;
+    windElement.innerHTML = Math.round(response.data.wind.speed);
+    dateElement.innerHTML=formatDate(response.data.dt * 1000);
   
                    
   }
