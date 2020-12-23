@@ -7,9 +7,8 @@ function formateDate(timestamp) {
   }
   let minutes = date.getMinutes();
   if (minutes < 10) {
-    minutes =`0${minutes}`;
+    minutes =`0${minutes}`;    
   }
- 
   let days = [
     "Sunday", 
     "Monday", 
@@ -20,12 +19,9 @@ function formateDate(timestamp) {
     "Saturday"
   ];
 
-  let day = days[date.getDay()];
-  let placeHolder = document.querySelector("#day");
-  placeHolder.innerHTML =  `${day}`;
-
-  let time = document.querySelector("#time");
-  time.innerHTML = `${hours}:${minutes}`;
+  let day = days[now.getDay()];
+  return `${day} ${hours}:${minutes}`
+ 
  }
 
 
@@ -53,8 +49,7 @@ function displayWeather(response) {
      let conditions = document.querySelector("#conditions");
      let humidity = document.querySelector("#humidity");
      let wind = document.querySelector("#wind");
-   
-    
+     let date = document.querySelector("#date");  
        
 
      fahrenheitTemperature = response.data.main.temp
@@ -64,6 +59,7 @@ function displayWeather(response) {
     conditions.innerHTML = response.data.weather[0].description;
     humidity.innerHTML = response.data.main.humidity;
     wind.innerHTML = Math.round(response.data.wind.speed);
+    date.innerHTML=formateDate(response.data.dt * 1000);
   
                    
   }
@@ -104,6 +100,6 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", convertToCelsius);
 
 
-
+search("Kansas City");
 
 
