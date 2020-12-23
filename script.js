@@ -9,7 +9,7 @@ function formateDate(timestamp) {
   if (minutes < 10) {
     minutes =`0${minutes}`;
   }
-
+ 
   let days = [
     "Sunday", 
     "Monday", 
@@ -21,9 +21,6 @@ function formateDate(timestamp) {
   ];
 
   let day = days[now.getDay()];
-  let placeHolder = document.querySelector("#day-time");
-  placeHolder.innerHTML =  `${day}`
-
   return `${day}, ${hours}:${minutes}`;
 }
 
