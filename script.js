@@ -24,7 +24,7 @@ function formateDate(timestamp) {
   let placeHolder = document.querySelector("#day-time");
   placeHolder.innerHTML =  `${day}`
 
-  return `${date}, ${hours}:${minutes}`;
+  return `${day}, ${hours}:${minutes}`;
 }
 
 
@@ -62,7 +62,7 @@ function displayWeather(response) {
     conditions.innerHTML = response.data.weather[0].description;
     humidity.innerHTML = response.data.main.humidity;
     wind.innerHTML = Math.round(response.data.wind.speed);
-       date.innerHTML = formatDate(response.data.dt * 1000);
+    date.innerHTML = formatDate(response.data.dt * 1000);
                    
   }
 
