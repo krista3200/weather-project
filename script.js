@@ -21,7 +21,11 @@ function formateDate(timestamp) {
   ];
 
   let day = days[now.getDay()];
-  return  `${day}, ${hours}:${minutes}`;
+  let placeHolder = document.querySelector("#day");
+  placeHolder.innerHTML =  `${day}`;
+
+  let time = document.querySelector("#time");
+  time.innerHTML = `${hours}:${minutes}`;
  }
 
 
@@ -49,7 +53,7 @@ function displayWeather(response) {
      let conditions = document.querySelector("#conditions");
      let humidity = document.querySelector("#humidity");
      let wind = document.querySelector("#wind");
-     let date = document.querySelector("#day-time");
+     let date = document.querySelector("#day");
        
 
      fahrenheitTemperature = response.data.main.temp
