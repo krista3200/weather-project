@@ -21,6 +21,9 @@ function formateDate(timestamp) {
   ];
 
   let day = days[now.getDay()];
+  let form = document.querySelector("#day-time");
+  form.innerHTML =  `${day}`
+
   return `${day}, ${hours}:${minutes}`;
 }
 
