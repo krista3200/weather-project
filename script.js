@@ -54,6 +54,7 @@ function displayWeather(response) {
      let humidity = document.querySelector("#humidity");
      let wind = document.querySelector("#wind");
      let date = document.querySelector("#day");
+     
        
 
      fahrenheitTemperature = response.data.main.temp
