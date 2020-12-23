@@ -49,6 +49,7 @@ function displayWeather(response) {
      let humidityElement = document.querySelector("#humidity");
      let windElement = document.querySelector("#wind");
      let dateElement = document.querySelector("#date");  
+     let iconElement = document.querySelector("#icon");
        
 
      fahrenheitTemperature = response.data.main.temp
@@ -59,6 +60,7 @@ function displayWeather(response) {
     humidityElement.innerHTML = response.data.main.humidity;
     windElement.innerHTML = Math.round(response.data.wind.speed);
     dateElement.innerHTML=formatDate(response.data.dt * 1000);
+    iconElement.setAttribute("src", `http://openweatherapp.org/img/wn/04d02x.png`);
   
                    
   }
