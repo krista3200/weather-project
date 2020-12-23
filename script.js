@@ -53,8 +53,8 @@ function displayWeather(response) {
      let conditions = document.querySelector("#conditions");
      let humidity = document.querySelector("#humidity");
      let wind = document.querySelector("#wind");
-     let date = document.querySelector("#day");
-     
+   
+    
        
 
      fahrenheitTemperature = response.data.main.temp
@@ -64,7 +64,7 @@ function displayWeather(response) {
     conditions.innerHTML = response.data.weather[0].description;
     humidity.innerHTML = response.data.main.humidity;
     wind.innerHTML = Math.round(response.data.wind.speed);
-    date.innerHTML = formatDate(response.data.dt * 1000);
+  
                    
   }
 
