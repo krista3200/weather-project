@@ -43,7 +43,6 @@ function searchCity(city) {
 }
 
 function displayWeather(response) {
-  console.log(response.data)
      let temperature = document.querySelector("#temperature");
      let city = document.querySelector("#city");
      let conditions = document.querySelector("#conditions");
