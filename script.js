@@ -20,7 +20,7 @@ function formateDate(timestamp) {
     "Saturday"
   ];
 
-  let day = days[now.getDay()];
+  let day = days[date.getDay()];
   let placeHolder = document.querySelector("#day");
   placeHolder.innerHTML =  `${day}`;
 
