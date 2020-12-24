@@ -28,7 +28,7 @@ div[id=conditions] {
     text-transform: capitalize;
 }
 
-.units.active {
+.class.active {
     color:#a6c9fd;
     cursor: default;           
 }
