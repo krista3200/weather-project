@@ -46,6 +46,7 @@ function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
   let forecast = response.data.list[0];
   forecastElement.innerHTML = `
+  <div class="row row-cols-1 row-cols-md-5">
   <div class="col mb-4">
   <div class="card h-100"> 
   <div class="card-body">
