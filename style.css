@@ -61,19 +61,11 @@ h1 {
     width: 33.33%;
 }
 
-#celsius-link.active {
+.active {
     color:#a6c9fd;
     cursor: default;
 }
 
-#celsius-link.active:hover {
-    text-decoration: none;
-}
-#fahrenheit-link.active {
-    color:#a6c9fd;
-    cursor: default;
-}
-
-#fahrenheit-link.activer:hover {
+.active:hover {
     text-decoration: none;
 }
