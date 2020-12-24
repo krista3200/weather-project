@@ -34,7 +34,7 @@ a[class=active] {
       
 }
 
-a[class=active].hover {
+a[class=active]:hover {
     text-decoration: none;
 }
 
