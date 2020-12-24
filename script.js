@@ -53,6 +53,7 @@ function displayWeather(response) {
        
 
      fahrenheitTemperature = response.data.main.temp
+     celsiusTemperature = response.data.main.temp
 
     temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
     cityElement.innerHTML = response.data.name;
@@ -86,13 +87,14 @@ function displayWeather(response) {
 function displayFahrenheitTemperature(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
-  let fahrenheitTemperature = (temperatureElement.innerHTML * 9) / 5 +32;
+  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
+let celsiusTemperature = null;
 
 search("Kansas City");
 
