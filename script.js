@@ -48,7 +48,7 @@ function displayForecast(response) {
   forecastElement.innerHTML = `
   
   <div class="col mb-4">
-  <div class="card h-50"> 
+  <div class="card h-75"> 
   <div class="card-body">
   <p class="card-text">
   <h3>${formatHours(forecast.dt * 1000)}</h3>
