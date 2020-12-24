@@ -31,7 +31,11 @@ div[id=conditions] {
 a[class=active] {
     color:#a6c9fd;
     cursor: default; 
-    text-decoration: none;  
+      
+}
+
+a[class=active].hover {
+    text-decoration: none;
 }
 
 button {
