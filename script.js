@@ -47,7 +47,7 @@ function displayForecast(response) {
   let forecast = response.data.list[0];
   forecastElement.innerHTML = 
   `  
-  <div class="col mb-8">
+  <div class="col">
   <div class="card h-65"> 
   <div class="card-body">
   <p class="card-text">
@@ -66,7 +66,7 @@ function displayForecast(response) {
 forecast = response.data.list[1];
 forecastElement.innerHTML += 
 `  
-<div class="col mb-8">
+<div class="col">
 <div class="card h-65"> 
 <div class="card-body">
 <p class="card-text">
@@ -84,7 +84,7 @@ ${Math.round(forecast.main.temp_min)}°
 forecast = response.data.list[2];
 forecastElement.innerHTML += 
 `  
-<div class="col mb-8">
+<div class="col">
 <div class="card h-65"> 
 <div class="card-body">
 <p class="card-text">
@@ -101,7 +101,7 @@ forecastElement.innerHTML +=
 forecast = response.data.list[3];
 forecastElement.innerHTML += 
 `  
-<div class="col mb-8">
+<div class="col">
 <div class="card h-65"> 
 <div class="card-body">
 <p class="card-text">
@@ -118,7 +118,7 @@ forecastElement.innerHTML +=
 forecast = response.data.list[4];
 forecastElement.innerHTML += 
 `  
-<div class="col mb-8">
+<div class="col">
 <div class="card h-65"> 
 <div class="card-body">
 <p class="card-text">
@@ -135,7 +135,7 @@ forecastElement.innerHTML +=
 forecast = response.data.list[5];
 forecastElement.innerHTML += 
 `  
-<div class="col mb-8">
+<div class="col">
 <div class="card h-65"> 
 <div class="card-body">
 <p class="card-text">
@@ -153,7 +153,7 @@ ${Math.round(forecast.main.temp_min)}°
 forecast = response.data.list[6];
 forecastElement.innerHTML += 
 `  
-<div class="col mb-8">
+<div class="col">
 <div class="card h-65"> 
 <div class="card-body">
 <p class="card-text">
