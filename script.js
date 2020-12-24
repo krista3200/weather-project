@@ -36,10 +36,31 @@ searchCity(search.value);
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", citySearch);
 
+function displayForecast(response) {
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = `
+  <div class="card-body">
+  <p class="card-text"><h3>Mon</h3>
+    <br />                    
+    <br />
+    <div class="weather-forecast-temperature"> 34°/29°
+    </div>
+  </p>
+  <img src=https://openweathermap.org/img/wn/10d@2x.png" class="card-img-top" alt="...">
+  </div>
+</div>
+</div>`
+  console.log(response.data);
+
+}
+
 function searchCity(city) {
   let apiKey = "c58db3d14698a9e64d16eeb8866f42af";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayWeather);
+
+  apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metic`;
+  axios.get(apiUrl).then(displayForecast);
 }
 
 function displayWeather(response) {
@@ -108,6 +129,7 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 let celsiusTemperature = null;
+
 
 searchCity("Kansas City");
 
