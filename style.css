@@ -28,12 +28,12 @@ div[id=conditions] {
     text-transform: capitalize;
 }
 
-a[class=active] {
+a[id=fahrenheit-link] {
     color:#a6c9fd;
-    cursor: default;  
+    cursor: default;
 }
 
-a[class=active]:hover {
+a[id=fahrenheit-link]:hover {
     text-decoration: none;
 }
 
