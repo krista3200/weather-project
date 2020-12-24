@@ -46,7 +46,7 @@ function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
   let forecast = response.data.list[0];
   forecastElement.innerHTML = `
-  
+  <div class="card h-100"> 
   <div class="card-body">
   <p class="card-text">
   <h3>${formatHours(forecast.dt * 1000)}</h3>
