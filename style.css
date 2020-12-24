@@ -43,10 +43,16 @@ button {
     display: block;    
 
 }
+.weather-forecast-temperature{
+    max-width:70px;
+    color:#a6c9fd;
+    font-size: 20px;
+    display: block; 
+}
 h3 {
     max-width:70px;
     color:#a6c9fd;
-    font-size: 10px;
+    font-size: 20px;
     display: block; 
 }
 h1 {
