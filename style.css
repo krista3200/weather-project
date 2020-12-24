@@ -28,12 +28,12 @@ div[id=conditions] {
     text-transform: capitalize;
 }
 
-.temperature.active {
+.col-sm.active {
     color:#a6c9fd;
     cursor: default;           
 }
 
-.temperature.active:hover {
+.col-sm.active:hover {
     text-decoration: none;
 }
 
