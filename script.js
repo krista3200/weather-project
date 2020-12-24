@@ -48,12 +48,13 @@ function displayForecast(response) {
   forecastElement.innerHTML = 
   `  
   <div class="col mb-4">
-  <div class="card h-75"> 
+  <div class="card h-65"> 
   <div class="card-body">
   <p class="card-text">
   <h3>${formatHours(forecast.dt * 1000)}</h3>
   <img src="https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png" class="card-img-top" alt="...">
-  <div class="weather-forecast-temperature"> ${Math.round(forecast.main.temp_max)}°/${Math.round(forecast.main.temp_min)}°
+  <div class="weather-forecast-temperature"> ${Math.round(forecast.main.temp_max)}°/
+  ${Math.round(forecast.main.temp_min)}°
     </div>
   </p>
   
@@ -66,12 +67,13 @@ forecast = response.data.list[1];
 forecastElement.innerHTML += 
 `  
 <div class="col mb-4">
-<div class="card h-100"> 
+<div class="card h-65"> 
 <div class="card-body">
 <p class="card-text">
 <h3>${formatHours(forecast.dt * 1000)}</h3>
 <img src="https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png" class="card-img-top" alt="...">
-<div class="weather-forecast-temperature"> ${Math.round(forecast.main.temp_max)}°/${Math.round(forecast.main.temp_min)}°
+<div class="weather-forecast-temperature"> ${Math.round(forecast.main.temp_max)}°/
+${Math.round(forecast.main.temp_min)}°
   </div>
 </p>
 
@@ -83,12 +85,13 @@ forecast = response.data.list[2];
 forecastElement.innerHTML += 
 `  
 <div class="col mb-4">
-<div class="card h-100"> 
+<div class="card h-65"> 
 <div class="card-body">
 <p class="card-text">
 <h3>${formatHours(forecast.dt * 1000)}</h3>
 <img src="https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png" class="card-img-top" alt="...">
-<div class="weather-forecast-temperature"> ${Math.round(forecast.main.temp_max)}°/${Math.round(forecast.main.temp_min)}°
+<div class="weather-forecast-temperature"> ${Math.round(forecast.main.temp_max)}°/
+${Math.round(forecast.main.temp_min)}°
   </div>
 </p>
 
@@ -100,12 +103,13 @@ forecast = response.data.list[3];
 forecastElement.innerHTML += 
 `  
 <div class="col mb-4">
-<div class="card h-100"> 
+<div class="card h-65"> 
 <div class="card-body">
 <p class="card-text">
 <h3>${formatHours(forecast.dt * 1000)}</h3>
 <img src="https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png" class="card-img-top" alt="...">
-<div class="weather-forecast-temperature"> ${Math.round(forecast.main.temp_max)}°/${Math.round(forecast.main.temp_min)}°
+<div class="weather-forecast-temperature"> ${Math.round(forecast.main.temp_max)}°/
+${Math.round(forecast.main.temp_min)}°
   </div>
 </p>
 
@@ -117,12 +121,13 @@ forecast = response.data.list[4];
 forecastElement.innerHTML += 
 `  
 <div class="col mb-4">
-<div class="card h-100"> 
+<div class="card h-65"> 
 <div class="card-body">
 <p class="card-text">
 <h3>${formatHours(forecast.dt * 1000)}</h3>
 <img src="https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png" class="card-img-top" alt="...">
-<div class="weather-forecast-temperature"> ${Math.round(forecast.main.temp_max)}°/${Math.round(forecast.main.temp_min)}°
+<div class="weather-forecast-temperature"> ${Math.round(forecast.main.temp_max)}°/
+${Math.round(forecast.main.temp_min)}°
   </div>
 </p>
 
@@ -134,12 +139,13 @@ forecast = response.data.list[6];
 forecastElement.innerHTML += 
 `  
 <div class="col mb-4">
-<div class="card h-100"> 
+<div class="card h-65"> 
 <div class="card-body">
 <p class="card-text">
 <h3>${formatHours(forecast.dt * 1000)}</h3>
 <img src="https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png" class="card-img-top" alt="...">
-<div class="weather-forecast-temperature"> ${Math.round(forecast.main.temp_max)}°/${Math.round(forecast.main.temp_min)}°
+<div class="weather-forecast-temperature"> ${Math.round(forecast.main.temp_max)}°/
+${Math.round(forecast.main.temp_min)}°
   </div>
 </p>
 
@@ -151,12 +157,13 @@ forecast = response.data.list[7];
 forecastElement.innerHTML += 
 `  
 <div class="col mb-4">
-<div class="card h-100"> 
+<div class="card h-65"> 
 <div class="card-body">
 <p class="card-text">
 <h3>${formatHours(forecast.dt * 1000)}</h3>
 <img src="https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png" class="card-img-top" alt="...">
-<div class="weather-forecast-temperature"> ${Math.round(forecast.main.temp_max)}°/${Math.round(forecast.main.temp_min)}°
+<div class="weather-forecast-temperature"> ${Math.round(forecast.main.temp_max)}°/
+${Math.round(forecast.main.temp_min)}°
   </div>
 </p>
 
