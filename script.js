@@ -54,8 +54,7 @@ function displayForecast(response) {
   <p class="card-text">
   <h3>${formatHours(forecast.dt * 1000)}</h3>
   <img src="https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png" class="card-img-top" alt="...">
-  <div class="weather-forecast-temperature"> ${Math.round(forecast.main.temp_max)}°/
-  ${Math.round(forecast.main.temp_min)}°
+  <div class="weather-forecast-temperature"> ${Math.round(forecast.main.temp_max)}°/${Math.round(forecast.main.temp_min)}°
     </div>
   </p>
   
@@ -75,8 +74,7 @@ forecastElement.innerHTML +=
 <p class="card-text">
 <h3>${formatHours(forecast.dt * 1000)}</h3>
 <img src="https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png" class="card-img-top" alt="...">
-<div class="weather-forecast-temperature"> ${Math.round(forecast.main.temp_max)}°/
-${Math.round(forecast.main.temp_min)}°
+<div class="weather-forecast-temperature"> ${Math.round(forecast.main.temp_max)}°/${Math.round(forecast.main.temp_min)}°
   </div>
 </p>
 
@@ -149,8 +147,7 @@ forecastElement.innerHTML +=
 <p class="card-text">
 <h3>${formatHours(forecast.dt * 1000)}</h3>
 <img src="https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png" class="card-img-top" alt="...">
-<div class="weather-forecast-temperature"> ${Math.round(forecast.main.temp_max)}°/
-${Math.round(forecast.main.temp_min)}°
+<div class="weather-forecast-temperature"> ${Math.round(forecast.main.temp_max)}°/${Math.round(forecast.main.temp_min)}°
   </div>
 </p>
 </div>
@@ -168,8 +165,7 @@ forecastElement.innerHTML +=
 <p class="card-text">
 <h3>${formatHours(forecast.dt * 1000)}</h3>
 <img src="https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png" class="card-img-top" alt="...">
-<div class="weather-forecast-temperature"> ${Math.round(forecast.main.temp_max)}°/
-${Math.round(forecast.main.temp_min)}°
+<div class="weather-forecast-temperature"> ${Math.round(forecast.main.temp_max)}°/${Math.round(forecast.main.temp_min)}°
   </div>
 </p>
 </div>
