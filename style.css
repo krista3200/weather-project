@@ -44,6 +44,7 @@ button {
     color:#a6c9fd;
     font-size: 20px;
     display: block; 
+    text-align: center;
 }
 h3 {
     max-width:70px;
