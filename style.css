@@ -69,3 +69,11 @@ a[id=fahrenheit-link] {
 a[id=fahrenheit-link]:hover {
     text-decoration: none;
 }
+a[id=celsius-link] {
+    color:#a6c9fd;
+    cursor: default;
+}
+
+a[id=celsius-link]:hover {
+    text-decoration: none;
+}
