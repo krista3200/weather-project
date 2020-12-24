@@ -59,11 +59,11 @@ h1 {
     width: 33.33%;
 }
 
-.temperature .active {
+.units .active {
     color:#a6c9fd;
     cursor: default;           
 }
 
-.temperature .active:hover {
+.units .active:hover {
     text-decoration: none;
 }
