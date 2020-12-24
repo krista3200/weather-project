@@ -28,15 +28,6 @@ div[id=conditions] {
     text-transform: capitalize;
 }
 
-.units.active {
-    color:#a6c9fd;
-    cursor: default;           
-}
-
-.units.active:hover {
-    text-decoration: none;
-}
-
 button {
     background-color: #ffffff;
     color: #253b4c;
@@ -66,4 +57,13 @@ h1 {
 .column-1 {
     float: left;
     width: 33.33%;
+}
+
+.temperature.active {
+    color:#a6c9fd;
+    cursor: default;           
+}
+
+.temperature.active:hover {
+    text-decoration: none;
 }
