@@ -60,3 +60,12 @@ h1 {
     float: left;
     width: 33.33%;
 }
+
+a[id=fahrenheit-link] {
+    color:#a6c9fd;
+    cursor: default;
+}
+
+a[id=fahrenheit-link]:hover {
+    text-decoration: none;
+}
