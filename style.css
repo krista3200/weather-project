@@ -61,12 +61,12 @@ h1 {
     width: 33.33%;
 }
 
-.active {
+#celsius-link {
     color:#a6c9fd;
     cursor: default;
 }
 
-.active:hover {
+#celsius-link:hover {
     text-decoration: none;
 }
 
