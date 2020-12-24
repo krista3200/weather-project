@@ -13,7 +13,7 @@ function formatDate(timestamp) {
   ];
 
   let day = days[date.getDay()];
-  return `${day} ${formatHours(timestamp)}`
+  return `${day} ${formatHours(timestamp)}`;
  
  }
 
@@ -30,6 +30,7 @@ let form = document.querySelector("#search-form");
 form.addEventListener("submit", citySearch);
 
 function formatHours(timestamp) {
+  let date = new Date(timestamp);
   let hours = date.getHours();
   if (hours <10) {
     hours=`0${hours}`;
