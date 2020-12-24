@@ -61,19 +61,19 @@ h1 {
     width: 33.33%;
 }
 
-a[id=fahrenheit-link] {
+#celsius-link.active {
     color:#a6c9fd;
     cursor: default;
 }
 
-a[id=fahrenheit-link]:hover {
+#celsius-link.active:hover {
     text-decoration: none;
 }
-a[id=celsius-link] {
+#fahrenheit-link.active {
     color:#a6c9fd;
     cursor: default;
 }
 
-a[id=celsius-link]:hover {
+#fahrenheit-link.activer:hover {
     text-decoration: none;
 }
