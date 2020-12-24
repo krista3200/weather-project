@@ -69,3 +69,12 @@ h1 {
 .active:hover {
     text-decoration: none;
 }
+
+#fahrenheit-link {
+    color:#a6c9fd;
+    cursor: default;
+}
+
+#fahrenheit-link:hover {
+    text-decoration: none;
+}
