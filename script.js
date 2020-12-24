@@ -92,7 +92,7 @@ function displayFahrenheitTemperature(event) {
 }
 
 function displayCelsiusTemperature(event) {
-  event.preventDefaul();
+  event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
