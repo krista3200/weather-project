@@ -57,4 +57,13 @@ h1 {
     float: left;
     width: 33.33%;
 }
+
+.temperautre.active {
+    color:#a6c9fd;
+    cursor: default;    
+}
+.temperautre.active:hover {
+    text-decoration: none;  
+
+}
  
