@@ -58,11 +58,12 @@ h1 {
     width: 33.33%;
 }
 
-.weather-temperature.active {
+.row.active {
     color:#a6c9fd;
     cursor: default;    
 }
-.weather-temperature.active:hover {
+.row.active:hover {
     text-decoration: none;  
+
 }
  
