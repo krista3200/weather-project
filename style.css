@@ -37,6 +37,7 @@ button {
 .card-img-top{
     display: block; 
     margin: 0 auto;
+    text-align: center;
     
 }
 .weather-forecast-temperature{
