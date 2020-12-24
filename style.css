@@ -39,7 +39,15 @@ button {
 .card-img-top{
     max-width:70px;
     color:#a6c9fd;
-    font-size: 15px;
+    font-size: 1.75rem;
+    display: block;    
+
+}
+h3 {
+    max-width:70px;
+    color:#a6c9fd;
+    font-size: 1.75rem;
+    display: block; 
 }
 h1 {
     text-align: left;
