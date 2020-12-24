@@ -36,6 +36,18 @@ searchCity(search.value);
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", citySearch);
 
+function formatHours(timestamp) {
+  let hours = date.getHours();
+  if (hours <10) {
+    hours=`0${hours}`;
+  }
+  let minutes = date.getMinutes();
+  if (minutes < 10) {
+    minutes =`0${minutes}`;  
+
+  return `${hours}:${minutes}`;
+}
+
 function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
   let forecast = response.data.list[0];
@@ -43,7 +55,7 @@ function displayForecast(response) {
   <div class="col mb-4">
   <div class="card h-100">   
   <div class="card-body">
-  <p class="card-text"><h3>Mon</h3>
+  <p class="card-text"><h3>${formatHours(forecast.dt * 1000)}</h3>
       <div class="weather-forecast-temperature"> ${Math.round(forecast.main.temp_max)}°/${Math.round(forecast.main.temp_min)}°
     </div>
   </p>
