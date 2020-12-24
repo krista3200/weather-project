@@ -109,6 +109,6 @@ celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 let celsiusTemperature = null;
 
-searchCity("Kansas City");
+//searchCity("Kansas City");
 
 
