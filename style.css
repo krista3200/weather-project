@@ -28,13 +28,13 @@ div[id=conditions] {
     text-transform: capitalize;
 }
 
-a[class=active] {
+.href.# {
     color:#a6c9fd;
     cursor: default; 
       
 }
 
-a[class=active]:hover {
+.href.#:hover {
     text-decoration: none;
 }
 
