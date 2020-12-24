@@ -38,21 +38,21 @@ form.addEventListener("submit", citySearch);
 
 function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
+  let forecast = response.data.list[0];
   forecastElement.innerHTML = `
   <div class="col mb-4">
   <div class="card h-100">   
   <div class="card-body">
   <p class="card-text"><h3>Mon</h3>
-    <br />                    
-    <br />
-    <div class="weather-forecast-temperature"> 34°/29°
+      <div class="weather-forecast-temperature"> ${Math.round(forecast.main.temp_max)}°/${Math.round(forecast.main.temp_min)}°
     </div>
   </p>
   <img src=https://openweathermap.org/img/wn/10d@2x.png" class="card-img-top" alt="...">
   </div>
 </div>
-</div>`
-  console.log(response.data);
+</div>
+`;
+ 
 
 }
 
