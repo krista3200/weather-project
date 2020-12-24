@@ -28,6 +28,12 @@ div[id=conditions] {
     text-transform: capitalize;
 }
 
+a[class=active] {
+    color:#a6c9fd;
+    cursor: default; 
+    text-decoration: none;  
+}
+
 button {
     background-color: #ffffff;
     color: #253b4c;
@@ -47,7 +53,8 @@ h1 {
     padding: 0 20px;
     display: block;
   }
-   Small{
+
+  Small{
       font-size: 1rem;
       font-weight: 400px;
       line-height: 1.5;
@@ -57,13 +64,3 @@ h1 {
     float: left;
     width: 33.33%;
 }
-
-.weather-temperature.active {
-    color:#a6c9fd;
-    cursor: default;    
-}
-.weather-temperature:hover {
-    text-decoration: none;  
-
-}
- 
