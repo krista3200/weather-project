@@ -48,6 +48,7 @@ function displayForecast(response) {
   forecastElement.innerHTML = 
   `  
   <div class="col">
+  <div class="w-100"
   <div class="card h-65"> 
   <div class="card-body">
   <p class="card-text">
