@@ -37,15 +37,6 @@ a[class=active]:hover {
     text-decoration: none;
 }
 
-a[id=fahrenheit-link] {
-    color:#a6c9fd;
-    cursor: default;
-}
-
-a[id=fahrenheit-link]:hover {
-    text-decoration: none;
-}
-
 button {
     background-color: #ffffff;
     color: #253b4c;
