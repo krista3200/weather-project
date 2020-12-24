@@ -42,45 +42,7 @@ function formatHours(timestamp) {
   return `${hours}:${minutes}`;
 }
 
-function displayForecast(response) {
-  let forecastElement = document.querySelector("#forecast");
-  let forecast = response.data.list[0];
-  forecastElement.innerHTML = 
-  `  
-  <div class="col mb-4">
-  <div class="card h-75"> 
-  <div class="card-body">
-  <p class="card-text">
-  <h3>${formatHours(forecast.dt * 1000)}</h3>
-  <img src="https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png" class="card-img-top" alt="...">
-  <div class="weather-forecast-temperature"> ${Math.round(forecast.main.temp_max)}°/${Math.round(forecast.main.temp_min)}°
-    </div>
-  </p>
-  
-  </div>
-</div>
-</div>
-`;
- 
-forecast = response.data.list[1];
-forecastElement.innerHTML = forecastElement.innerHTML +
-`  
-<div class="col mb-4">
-<div class="card h-75"> 
-<div class="card-body">
-<p class="card-text">
-<h3>${formatHours(forecast.dt * 1000)}</h3>
-<img src="https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png" class="card-img-top" alt="...">
-<div class="weather-forecast-temperature"> ${Math.round(forecast.main.temp_max)}°/${Math.round(forecast.main.temp_min)}°
-  </div>
-</p>
 
-</div>
-</div>
-</div>
-`;
-
-}
 
 function searchCity(city) {
   let apiKey = "c58db3d14698a9e64d16eeb8866f42af";
@@ -157,6 +119,46 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 let celsiusTemperature = null;
+
+function displayForecast(response) {
+  let forecastElement = document.querySelector("#forecast");
+  let forecast = response.data.list[0];
+  forecastElement.innerHTML = 
+  `  
+  <div class="col mb-4">
+  <div class="card h-75"> 
+  <div class="card-body">
+  <p class="card-text">
+  <h3>${formatHours(forecast.dt * 1000)}</h3>
+  <img src="https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png" class="card-img-top" alt="...">
+  <div class="weather-forecast-temperature"> ${Math.round(forecast.main.temp_max)}°/${Math.round(forecast.main.temp_min)}°
+    </div>
+  </p>
+  
+  </div>
+</div>
+</div>
+`;
+ 
+forecast = response.data.list[1];
+forecastElement.innerHTML = forecastElement.innerHTML +
+`  
+<div class="col mb-4">
+<div class="card h-75"> 
+<div class="card-body">
+<p class="card-text">
+<h3>${formatHours(forecast.dt * 1000)}</h3>
+<img src="https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png" class="card-img-top" alt="...">
+<div class="weather-forecast-temperature"> ${Math.round(forecast.main.temp_max)}°/${Math.round(forecast.main.temp_min)}°
+  </div>
+</p>
+
+</div>
+</div>
+</div>
+`;
+
+}
 
 
 searchCity("Kansas City");
