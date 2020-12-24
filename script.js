@@ -38,7 +38,7 @@ form.addEventListener("submit", citySearch);
 
 function searchCity(city) {
   let apiKey = "c58db3d14698a9e64d16eeb8866f42af";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayWeather);
 }
 
