@@ -28,12 +28,12 @@ div[id=conditions] {
     text-transform: capitalize;
 }
 
-.col-sm.active {
+.row.active {
     color:#a6c9fd;
     cursor: default;           
 }
 
-.col-sm.active:hover {
+.row.active:hover {
     text-decoration: none;
 }
 
