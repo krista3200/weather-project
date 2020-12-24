@@ -62,12 +62,14 @@ function displayForecast(response) {
   </div>
 </div>
 </div>
+</div>
 `;
  
 forecast = response.data.list[1];
 forecastElement.innerHTML += 
 `  
 <div class="col">
+<div class="w-100"
 <div class="card h-65"> 
 <div class="card-body">
 <p class="card-text">
@@ -78,6 +80,7 @@ ${Math.round(forecast.main.temp_min)}°
   </div>
 </p>
 
+</div>
 </div>
 </div>
 </div>
@@ -86,6 +89,7 @@ forecast = response.data.list[2];
 forecastElement.innerHTML += 
 `  
 <div class="col">
+<div class="w-100"
 <div class="card h-65"> 
 <div class="card-body">
 <p class="card-text">
@@ -94,7 +98,7 @@ forecastElement.innerHTML +=
 <div class="weather-forecast-temperature"> ${Math.round(forecast.main.temp_max)}°/${Math.round(forecast.main.temp_min)}°
   </div>
 </p>
-
+</div>
 </div>
 </div>
 </div>
@@ -103,6 +107,7 @@ forecast = response.data.list[3];
 forecastElement.innerHTML += 
 `  
 <div class="col">
+<div class="w-100"
 <div class="card h-65"> 
 <div class="card-body">
 <p class="card-text">
@@ -111,7 +116,7 @@ forecastElement.innerHTML +=
 <div class="weather-forecast-temperature"> ${Math.round(forecast.main.temp_max)}°/${Math.round(forecast.main.temp_min)}°
   </div>
 </p>
-
+</div>
 </div>
 </div>
 </div>
@@ -120,6 +125,7 @@ forecast = response.data.list[4];
 forecastElement.innerHTML += 
 `  
 <div class="col">
+<div class="w-100"
 <div class="card h-65"> 
 <div class="card-body">
 <p class="card-text">
@@ -128,7 +134,7 @@ forecastElement.innerHTML +=
 <div class="weather-forecast-temperature"> ${Math.round(forecast.main.temp_max)}°/${Math.round(forecast.main.temp_min)}°
   </div>
 </p>
-
+</div>
 </div>
 </div>
 </div>
@@ -137,6 +143,7 @@ forecast = response.data.list[5];
 forecastElement.innerHTML += 
 `  
 <div class="col">
+<div class="w-100"
 <div class="card h-65"> 
 <div class="card-body">
 <p class="card-text">
@@ -146,7 +153,7 @@ forecastElement.innerHTML +=
 ${Math.round(forecast.main.temp_min)}°
   </div>
 </p>
-
+</div>
 </div>
 </div>
 </div>
@@ -155,6 +162,7 @@ forecast = response.data.list[6];
 forecastElement.innerHTML += 
 `  
 <div class="col">
+<div class="w-100"
 <div class="card h-65"> 
 <div class="card-body">
 <p class="card-text">
@@ -164,7 +172,7 @@ forecastElement.innerHTML +=
 ${Math.round(forecast.main.temp_min)}°
   </div>
 </p>
-
+</div>
 </div>
 </div>
 </div>
