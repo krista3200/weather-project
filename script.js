@@ -1,14 +1,7 @@
 
 function formatDate(timestamp) {
   let date = new Date(timestamp);
-  let hours = date.getHours();
-  if (hours <10) {
-    hours=`0${hours}`;
-  }
-  let minutes = date.getMinutes();
-  if (minutes < 10) {
-    minutes =`0${minutes}`;    
-  }
+
   let days = [
     "Sun", 
     "Mon", 
@@ -20,7 +13,7 @@ function formatDate(timestamp) {
   ];
 
   let day = days[date.getDay()];
-  return `${day} ${hours}:${minutes}`
+  return `${day} ${formatHours(timestamp)}`
  
  }
 
@@ -44,7 +37,7 @@ function formatHours(timestamp) {
   let minutes = date.getMinutes();
   if (minutes < 10) {
     minutes =`0${minutes}`;  
-
+  }
   return `${hours}:${minutes}`;
 }
 
@@ -55,7 +48,8 @@ function displayForecast(response) {
   <div class="col mb-4">
   <div class="card h-100">   
   <div class="card-body">
-  <p class="card-text"><h3>${formatHours(forecast.dt * 1000)}</h3>
+  <p class="card-text">
+  <h3>${formatHours(forecast.dt * 1000)}</h3>
       <div class="weather-forecast-temperature"> ${Math.round(forecast.main.temp_max)}°/${Math.round(forecast.main.temp_min)}°
     </div>
   </p>
