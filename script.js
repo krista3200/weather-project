@@ -85,9 +85,7 @@ function displayWeather(response) {
 
 function convertToFahrenheit(event){
 event.preventDefault();
-let fahrenheitTemperature = (32°F − 32) * 5/9;
 let temperatureElement = document.querySelector("#temperature");
-temperautreElement.innerHTML = fahrenheitTemperature;
 ;
 }
 
