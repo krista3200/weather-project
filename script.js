@@ -85,9 +85,10 @@ function displayWeather(response) {
 
 function convertToFahrenheit(event){
 event.preventDefault();
-let fahrenheitLink = (32°F − 32) * 5/9;
+let fahrenheitTemperature = (32°F − 32) * 5/9;
 let temperatureElement = document.querySelector("#temperature");
-temperatureElement.innerHTML = fahrenheitLink;
+temperautreElement.innerHTML = fahrenheitTemperature;
+;
 }
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
@@ -95,9 +96,7 @@ fahrenheitLink.addEventListener("click", convertToFahrenheit);
 
 function convertToCelsius(event){
   event.preventDefault();
-  let celsiusLink = (0°C * 9/5) + 32;
-  let temperatureElement = document.querySelector("#temperature"); 
-  temperatureElement.innerHTML = celsiusLink;
+  let temperatureElement = document.querySelector("#temperature");
   
   }
 
