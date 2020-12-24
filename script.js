@@ -39,6 +39,8 @@ form.addEventListener("submit", citySearch);
 function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
   forecastElement.innerHTML = `
+  <div class="col mb-4">
+  <div class="card h-100">   
   <div class="card-body">
   <p class="card-text"><h3>Mon</h3>
     <br />                    
