@@ -28,13 +28,21 @@ div[id=conditions] {
     text-transform: capitalize;
 }
 
-.href.# {
+a[class=active] {
     color:#a6c9fd;
-    cursor: default; 
-      
+    cursor: default;           
 }
 
-.href.#:hover {
+a[class=active]:hover {
+    text-decoration: none;
+}
+
+a[id=fahrenheit-link] {
+    color:#a6c9fd;
+    cursor: default;
+}
+
+a[id=fahrenheit-link]:hover {
     text-decoration: none;
 }
 
