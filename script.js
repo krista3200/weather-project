@@ -47,7 +47,7 @@ function displayForecast(response) {
   let forecast = response.data.list[0];
   forecastElement.innerHTML = 
   `  
-  <div class="col mb-4">
+  <div class="col mb-7">
   <div class="card h-65"> 
   <div class="card-body">
   <p class="card-text">
