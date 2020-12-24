@@ -83,23 +83,15 @@ function displayWeather(response) {
   let currentLoc = document.querySelector("#current-location");
   currentLoc.addEventListener("click", showPostion);
 
-function convertToFahrenheit(event){
-event.preventDefault();
-let temperatureElement = document.querySelector("#temperature");
-;
+function displayFahrenheitTemperature(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+  let fahrenheitTemperature = (temperatureElement.innerHTML * 9) / 5 +32;
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
-fahrenheitLink.addEventListener("click", convertToFahrenheit);
-
-function convertToCelsius(event){
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature");
-  
-  }
-
-let celsiusLink = document.querySelector("#celsius-link");
-celsiusLink.addEventListener("click", convertToCelsius);
+fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
 
 search("Kansas City");
