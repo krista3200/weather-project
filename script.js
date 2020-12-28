@@ -108,10 +108,11 @@ function displayWeather(response) {
     let latitude = position.coords.latitude;
     let longitude = position.coords.longitude;
     let apiKey = "c58db3d14698a9e64d16eeb8866f42af";
+
     let locationUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
     axios.get(locationUrl).then(displayWeather);
 
-    let locationUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+    locationUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
     axios.get(locationUrl).then(displayForecast);
     }
 
